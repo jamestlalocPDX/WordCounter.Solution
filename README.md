@@ -25,7 +25,13 @@ _This application will build a C# codebase for a word counter. A user will be pr
 
 ## **Minimum Viable Product (MVP)**
 
+The minimum viable product is an application that a user will interact with on a command line in their terminal. After typing and entering a word and a sentence, both the word and the sentence will be displayed in the terminal, as well as the word count for that sentence.
 
+Stretch Goals Include:
+
+* Allow users to enter multiple words.
+* Allow users to enter multiple sentences.
+* Allow users to run through the Word Count as many times as they would like without having to run it every time for a new word or sentence.
 
 ## **Setup/Installation**
 
