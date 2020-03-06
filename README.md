@@ -17,13 +17,11 @@ _This application will build a C# codebase for a word counter. A user will be pr
 
 | Behavior | Input | Output |
 |----------|:-----:|--------|
-| Customer enters "Yes" to decide whether or not to purchase bread or pastry. | Yes | "Wonderful! Here are today's specials. <br> Bread: Buy 2 hearty loaves, get 1 free. <br> Pastry: Buy 1 tasty pastry for $2 or 3 for $5 |
-| Customer enters "No" to decide whether or not to purchase bread or pastry. | No | "Thank you for stopping by Pierre's Bakery!" <br> "We hope to see you back soon. Have a nice Day!" |
-| Customer enters an amount for a hearty loaf of bread. | 1 | $5, 1 hearty loaf. |
-| Customer enters an amount for a single tasty pastry. | 1 | $2, 1 tasty pastry. |
-| Customer enters an amount for 2 hearty loaves of bread. | 2 | $10, 3 hearty loaves. |
-| Customer enters an amount for 3 tasty pastries. | 3 | $5, 3 tasty pastries. |
-| Customer enters an amount for both bread and pastry. | 2, 3 | $15, 2 hearty loaves and 3 tasty pastries. |
+| User enters a word. | "the" | Word: the |
+| User enters a number. | 5 | "Sorry! That is not a word." |
+| User enters a sentence. | "The duck swims on the lake." | Sentence: "The duck swims on the lake." |
+| User enters a word and a sentence, showing what the count is. | "the", "The duck swims on the lake." | Word: the <br> Sentence: The duck swims on the lake. <br> Word Count: 2 |
+| User enters a word and a sentence, ignoring the words in the sentence that contain the same letters in the same order, as the word given. | "The duck sang in the theater." | Word: the <br> Sentence: The duck swims on the lake. <br> Word Count: 2 |
 
 ## **Minimum Viable Product (MVP)**
 
