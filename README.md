@@ -6,7 +6,7 @@
 
 ## **Description**
 
-_This application will build a C# codebase for a word counter. A user will be prompted to enter a word, followed by a sentence, and then be told how many times the given word is used in the given sentence._
+_This application will build a C# codebase for a word counter. A user will be prompted to enter a word, followed by a sentence, and then be told how many times the given word appears in the given sentence._
 
 ## Preview
 <p align="center">
