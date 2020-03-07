@@ -6,15 +6,14 @@ namespace WordCounter.Models
   public class RepeatCounter
   {
     public string Word {get; set; }
-    public string Sentence { get; set; }
-    public RepeatCounter(string word, string sentence)
+  
+    public RepeatCounter(string word)
     {
       Word = word;
-      Sentence = sentence;
     }
     public string wordCheck()
     {
-      reutrn "word";
+      return "word";
     }
   }
 }
