@@ -13,6 +13,13 @@ namespace WordCounter.TestTools
       Assert.AreEqual(typeof(RepeatCounter), newWord.GetType());
     }
 
-
+    [TestMethod]
+    public void GetWord_ReturnsWord_String()
+    {
+      string word = "the";
+      RepeatCounter newWord = new RepeatCounter(word);
+      string result = newWord.Word;
+      Assert.AreEqual(word, result);
+    }
   }
 }
