@@ -7,6 +7,10 @@ namespace WordCounter.TestTools
   public class RepeatCounterTests
   {
     [TestMethod]
-    
+    public void wordCheck_ReturnsAString_string()
+    {
+      RepeatCounter newWord = new RepeatCounter();
+      Assert.AreEqual("word", newWord.wordCheck());
+    }
   }
 }
