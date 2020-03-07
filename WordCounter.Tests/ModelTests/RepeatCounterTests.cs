@@ -9,7 +9,7 @@ namespace WordCounter.TestTools
     [TestMethod]
     public void RepeatCounterConstructor_CreatesAnInstanceOfWord_String()
     {
-      RepeatCounter newWord = new RepeatCounter();
+      RepeatCounter newWord = new RepeatCounter("test");
       Assert.AreEqual(typeof(RepeatCounter), newWord.GetType());
     }
 
