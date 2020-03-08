@@ -19,6 +19,12 @@ namespace WordCounter.Models
     {
       Sentence = sentence;
       Count = 0;
-    }    
+    }
+
+    public bool SentenceToArray(string sentence)
+    {
+      return false;
+    }
+
   }
 }

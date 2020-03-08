@@ -18,7 +18,6 @@ _This application will build a C# codebase for a word counter. A user will be pr
 | Behavior | Input | Output |
 |----------|:-----:|--------|
 | User enters a word. | "the" | **Word**: the |
-| User enters a number. | 5 | "Sorry! That is not a word." |
 | User enters a sentence. | "The duck swims on the lake." | **Sentence**: "The duck swims on the lake." |
 | User enters a word and a sentence, showing what the count is. | "the", "The duck swims on the lake." | **Word**: the <br> **Sentence**: The duck swims on the lake. <br> **Word Count**: 2 |
 | User enters a word and a sentence, ignoring the words in the sentence that contain the same letters in the same order, as the word given. | "The duck sang in the theater." | **Word**: the <br> **Sentence**: The duck swims on the lake. <br> **Word Count**: 2 |

@@ -88,5 +88,17 @@ namespace WordCounter.TestTools
 
       Assert.AreEqual(updatedCount, result);
     }
+
+    [TestMethod]
+    public void SentenceToArray_ReturnsSentenceInArray_True()
+    {
+      string word = "the";
+      string sentence = "the duck swims on the lake";
+      RepeatCounter newCounter = new RepeatCounter(word, sentence);
+
+  
+
+      Assert.AreEqual(true, newCounter.SentenceToArray(sentence));
+    }
   }
 }
