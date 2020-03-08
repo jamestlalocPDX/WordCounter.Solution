@@ -69,9 +69,9 @@ namespace WordCounter.TestTools
       string word = "the";
       string sentence = "the duck swims on the lake";
       int count = 0;
-      RepeatCounter newCounter = new RepeatCounter(word, sentence, count);
+      RepeatCounter newCounter = new RepeatCounter(word, sentence);
 
-      string result = newCounter.Count;
+      int result = newCounter.Count;
 
       Assert.AreEqual(count, result);
     }

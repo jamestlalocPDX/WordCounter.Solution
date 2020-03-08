@@ -7,16 +7,18 @@ namespace WordCounter.Models
   {
     public string Word {get; set; }
     public string Sentence { get; set; }
+    public int Count { get; }
     
     public RepeatCounter(string word)
     {
       Word = word;
     }
-    
+
     public RepeatCounter(string word, string sentence)
     : this(word)
     {
       Sentence = sentence;
+      Count = 0;
     }    
   }
 }
