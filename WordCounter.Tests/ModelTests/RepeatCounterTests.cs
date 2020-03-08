@@ -68,12 +68,25 @@ namespace WordCounter.TestTools
     {
       string word = "the";
       string sentence = "the duck swims on the lake";
-      int count = 0;
       RepeatCounter newCounter = new RepeatCounter(word, sentence);
 
       int result = newCounter.Count;
 
-      Assert.AreEqual(count, result);
+      Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
+    public void SetCount_SetCount_Integer()
+    {
+      string word = "the";
+      string sentence = "the duck swims on the lake";
+      RepeatCounter newCounter = new RepeatCounter(word, sentence);
+
+      int updatedCount = 5;
+      newCounter.Count = updatedCount;
+      int result = newCounter.Count;
+
+      Assert.AreEqual(updatedCount, result);
     }
   }
 }
