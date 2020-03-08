@@ -62,5 +62,18 @@ namespace WordCounter.TestTools
 
       Assert.AreEqual(updatedSentence, result);
     }
+
+    [TestMethod]
+    public void GetCount_ReturnsCount_Integer()
+    {
+      string word = "the";
+      string sentence = "the duck swims on the lake";
+      int count = 0;
+      RepeatCounter newCounter = new RepeatCounter(word, sentence, count);
+
+      string result = newCounter.Count;
+
+      Assert.AreEqual(count, result);
+    }
   }
 }
