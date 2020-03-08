@@ -12,7 +12,7 @@ namespace WordCounter.Models
     {
       Word = word;
     }
-
+    
     public RepeatCounter(string word, string sentence)
     : this(word)
     {
