@@ -40,8 +40,9 @@ namespace WordCounter.TestTools
     [TestMethod]
     public void GetSentence_ReturnsSentence_String()
     {
+      string word = "the";
       string sentence = "the duck swims on the lake";
-      RepeatCounter newCounter = new RepeatCounter(sentence);
+      RepeatCounter newCounter = new RepeatCounter(word, sentence);
 
       string result = newCounter.Sentence;
 
