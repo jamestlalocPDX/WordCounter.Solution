@@ -100,5 +100,17 @@ namespace WordCounter.TestTools
 
       Assert.AreEqual(2, wordInstances);
     }
+
+    [TestMethod]
+    public void CountWordInSentence_IgnoreWordsWithPartialLetters_Integer()
+    {
+      string word = "the";
+      string sentence = "the duck swims on the lake theater";
+      RepeatCounter newCounter = new RepeatCounter(word, sentence);
+
+      int wordInstances = newCounter.CountWordInSentence();
+
+      Assert.AreEqual(3, wordInstances);
+    }
   }
 }
