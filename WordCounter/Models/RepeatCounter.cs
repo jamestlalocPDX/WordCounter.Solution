@@ -21,9 +21,17 @@ namespace WordCounter.Models
       Count = 0;
     }
 
-    public bool SentenceToArray(string sentence)
+    public int CountWordInSentence()
     {
-      return false;
+      string[] sentenceArray = Sentence.Split(" ");
+      foreach(string word in sentenceArray)
+      {
+        if (word == Word)
+        {
+          Count ++;
+        }
+      }
+      return Count;
     }
 
   }

@@ -90,15 +90,15 @@ namespace WordCounter.TestTools
     }
 
     [TestMethod]
-    public void SentenceToArray_ReturnsSentenceInArray_True()
+    public void CountWordInSentence_CountWordInstancesInSentence_Integer()
     {
       string word = "the";
       string sentence = "the duck swims on the lake";
       RepeatCounter newCounter = new RepeatCounter(word, sentence);
 
-  
+      int wordInstances = newCounter.CountWordInSentence();
 
-      Assert.AreEqual(true, newCounter.SentenceToArray(sentence));
+      Assert.AreEqual(3, wordInstances);
     }
   }
 }
