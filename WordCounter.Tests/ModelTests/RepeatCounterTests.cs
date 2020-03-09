@@ -98,7 +98,7 @@ namespace WordCounter.TestTools
 
       int wordInstances = newCounter.CountWordInSentence();
 
-      Assert.AreEqual(3, wordInstances);
+      Assert.AreEqual(2, wordInstances);
     }
   }
 }
